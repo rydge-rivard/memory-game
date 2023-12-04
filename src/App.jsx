@@ -11,13 +11,3 @@ function App() {
 }
 
 export default App;
-
-// async function getDuck() {
-//   try {
-//     const response = await fetch(`https://random-d.uk/api/v2/random`);
-//     const duck = await response.json();
-//     setURL(duck.url);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
