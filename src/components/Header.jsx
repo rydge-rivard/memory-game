@@ -1,4 +1,5 @@
 import "./Header.css";
+import { Score } from "./Score";
 
 export function Header() {
   return (
@@ -8,6 +9,7 @@ export function Header() {
         Get points by clicking on an image but don&apos;t click on any more than
         once!
       </div>
+      <Score />
     </div>
   );
 }
