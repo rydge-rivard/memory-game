@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import "./Card.css";
 import { useEffect } from "react";
 
-export function Card() {
+export function Card({ handler }) {
   const [url, setURL] = useState("");
 
   async function getDuck() {
@@ -19,8 +20,9 @@ export function Card() {
   useEffect(() => {
     getDuck();
   }, []);
+
   return (
-    <div className="card">
+    <div className="card" onClick={handler}>
       <img src={url} />
     </div>
   );
