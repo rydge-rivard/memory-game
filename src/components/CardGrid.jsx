@@ -31,9 +31,10 @@ export function CardGrid({ score, setScore, highScore, setHighScore }) {
 
   function gameOver() {
     alert("Game over, this card was already chosen.");
-    score > highScore && setHighScore(score);
+    highScore < score && setHighScore((highScore = score));
     setScore((score = 0));
     clicked = new Set([]);
+    return highScore;
   }
 
   function shuffleCards() {
