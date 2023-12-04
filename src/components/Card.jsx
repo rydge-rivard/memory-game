@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Card.css";
 import { useEffect } from "react";
 
-export function Card({ handler }) {
+export function Card({ handler, id = crypto.randomUUID() }) {
   const [url, setURL] = useState("");
 
   async function getDuck() {
@@ -22,7 +22,7 @@ export function Card({ handler }) {
   }, []);
 
   return (
-    <div className="card" onClick={handler}>
+    <div className="card" onClick={() => handler(id)}>
       <img src={url} />
     </div>
   );

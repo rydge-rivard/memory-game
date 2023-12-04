@@ -9,7 +9,12 @@ function App() {
   return (
     <>
       <Header score={score} highScore={highScore} />
-      <CardGrid />
+      <CardGrid
+        score={score}
+        setScore={setScore}
+        highScore={highScore}
+        setHighScore={setHighScore}
+      />
     </>
   );
 }
