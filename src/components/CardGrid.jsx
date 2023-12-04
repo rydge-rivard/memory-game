@@ -12,6 +12,10 @@ export function CardGrid() {
     <Card key={crypto.randomUUID()} handler={shuffleCards} />,
     <Card key={crypto.randomUUID()} handler={shuffleCards} />,
     <Card key={crypto.randomUUID()} handler={shuffleCards} />,
+    <Card key={crypto.randomUUID()} handler={shuffleCards} />,
+    <Card key={crypto.randomUUID()} handler={shuffleCards} />,
+    <Card key={crypto.randomUUID()} handler={shuffleCards} />,
+    <Card key={crypto.randomUUID()} handler={shuffleCards} />,
   ]);
 
   function shuffleCards() {

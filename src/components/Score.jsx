@@ -1,8 +1,9 @@
-export function Score() {
+/* eslint-disable react/prop-types */
+export function Score({ score, highScore }) {
   return (
     <div className="scoreboard">
-      <div>Current Score: 0</div>
-      <div>High Score: 7</div>
+      <div>Current Score: {score}</div>
+      <div>High Score: {highScore}</div>
     </div>
   );
 }
